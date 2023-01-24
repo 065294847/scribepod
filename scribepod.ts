@@ -24,6 +24,10 @@ const generateSummariesAndDiscussions = async (websiteData: WebsiteData): Promis
 }
 
 export const main = async () => {
+  const websiteData: WebsiteData = await getWebsiteData(WEBSITE_FOLDER_PATH);
+  console.log('Generating website discussions & summaries..');
+  generateSummariesAndDiscussions(websiteData);
+  
   // Generate The paper summaries and discussions
   const arxivData: ArxivData = await getAllPapers(PAPER_FOLDER_PATH);
   console.log('ArxivData:', arxivData)
