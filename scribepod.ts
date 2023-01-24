@@ -5,7 +5,7 @@ const PAPER_FOLDER_PATH = './papers' ;
 const WEBSITE_FOLDER_PATH = './websites';
 
 // You might need to play around with these a bit
-const WORDS_FOR_FACT_EXTRACTION = 4000;
+const WORDS_FOR_FACT_EXTRACTION = 2000;
 // TODO: Turn into something that generates equal sized chunks rather than just splitting arbitarily 
 const SPLIT_FACTS_BY = 5;
 
